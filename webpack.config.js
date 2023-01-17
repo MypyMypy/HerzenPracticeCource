@@ -38,10 +38,7 @@ module.exports = (env) => ({
     },
     plugins: [
         new CleanWebpackPlugin(),
-        new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, './index.html'),
-            filename: env.prod? 'index.[contenthash].html' : 'index.html',
-        }),
+        new HtmlWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: 'main.[contenthash].css',
         }),

@@ -1,13 +1,14 @@
 import 'babel-polyfill';
 import './styles/main.css';
-import { Card } from './scripts/Card.js';
-
-// const container = document.createElement('div');
-// container.classList.add('container');
-// document.body.append(container)
+import {el, setChildren} from 'redom';
 
 
-new Card(".container").init();
+
+
+let body = document.body
+let h3 = el('h3.header3', 'Test')
+setChildren(body, h3)
+
 
 
 

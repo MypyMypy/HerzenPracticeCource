@@ -1,0 +1,266 @@
+{
+    "lessonSheet": {
+        "lessonTitle": "",
+        "lessonDescription": "",
+        "lessonContent": []
+    },
+    "lesson-study": {
+        "lessonTitle": "Самостоятельная работа",
+        "lessonDescription": "",
+        "lessonContent": [
+            {
+                "tag": "h2",
+                "classes": [
+                    "lesson__sub-header"
+                ],
+                "textContent": "Описание задания:"
+            },
+            {
+                "tag": "p",
+                "classes": [
+                    "lesson__text"
+                ],
+                "textContent": ""
+            },
+            {
+                "tag": "h2",
+                "classes": [
+                    "lesson__sub-header"
+                ],
+                "textContent": "Ход работы:"
+            },
+            {
+                "tag": "ol",
+                "classes": [
+                    "lesson__list"
+                ],
+                "textContent": [
+                    {
+                        "tag": "li",
+                        "classes": [
+                            "lesson__list-item"
+                        ],
+                        "textContent": ""
+                    },
+                    {
+                        "tag": "li",
+                        "classes": [
+                            "lesson__list-item"
+                        ],
+                        "textContent": ""
+                    }
+                ]
+            },
+            {
+                "tag": "h2",
+                "classes": [
+                    "lesson__sub-header"
+                ],
+                "textContent": "Критерии оценивания:"
+            },
+            {
+                "tag": "ul",
+                "classes": [
+                    "lesson__list"
+                ],
+                "textContent": [
+                    {
+                        "tag": "li",
+                        "classes": [
+                            "lesson__list-item"
+                        ],
+                        "textContent": ""
+                    },
+                    {
+                        "tag": "li",
+                        "classes": [
+                            "lesson__list-item"
+                        ],
+                        "textContent": ""
+                    }
+                ]
+            },
+            {
+                "tag": "h2",
+                "classes": [
+                    "lesson__sub-header"
+                ],
+                "textContent": "Материалы для выполнения задания:"
+            },
+            {
+                "tag": "ul",
+                "classes": [
+                    "lesson__list"
+                ],
+                "textContent": [
+                    {
+                        "tag": "li",
+                        "classes": [
+                            "lesson__list-item"
+                        ],
+                        "textContent": [
+                            {
+                                "tag": "a",
+                                "classes": [
+                                    "lesson__text"
+                                ],
+                                "attributes": {
+                                    "href": ""
+                                },
+                                "textContent": ""
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "elementListSheet": {
+        "tag": "ul",
+        "classes": [
+            "lesson__list"
+        ],
+        "textContent": [
+            {
+                "tag": "li",
+                "classes": [
+                    "lesson__list-item"
+                ],
+                "textContent": ""
+            },
+            {
+                "tag": "li",
+                "classes": [
+                    "lesson__list-item"
+                ],
+                "textContent": ""
+            }
+        ]
+    },
+    "elementCodeSheet": {
+        "tag": "code",
+        "classes": [
+            "lesson__code"
+        ],
+        "textContent": ""
+    },
+    "subHeaderSheet": {
+        "tag": "h2",
+        "classes": [
+            "lesson__sub-header"
+        ],
+        "textContent": "Описание:"
+    },
+    "elementSheetDefault": {
+        "tag": "p",
+        "classes": [
+            "lesson__text"
+        ],
+        "textContent": ""
+    },
+    "linkSheet": {
+        "tag": "a",
+        "classes": [
+            "lesson__text"
+        ],
+        "attributes": {
+            "href": ""
+        },
+        "textContent": ""
+    },
+    "elementSheetMulti": {
+        "tag": "p",
+        "classes": [
+            "lesson__text"
+        ],
+        "textContent": [
+            {
+                "tag": "span",
+                "classes": [
+                    "lesson__text-fragment"
+                ],
+                "textContent": ""
+            },
+            {
+                "tag": "span",
+                "classes": [
+                    "lesson__text-fragment"
+                ],
+                "textContent": ""
+            },
+            {
+                "tag": "span",
+                "classes": [
+                    "lesson__text-fragment"
+                ],
+                "textContent": ""
+            }
+        ]
+    },
+    "elementCodeMultiSheet": {
+        "tag": "code",
+        "classes": [
+            "lesson__code"
+        ],
+        "textContent": [
+            {
+                "tag": "p",
+                "classes": [
+                    "lesson__code-line"
+                ],
+                "textContent": ""
+            },
+            {
+                "tag": "p",
+                "classes": [
+                    "lesson__code-line"
+                ],
+                "textContent": ""
+            },
+            {
+                "tag": "p",
+                "classes": [
+                    "lesson__code-line"
+                ],
+                "textContent": ""
+            }
+        ]
+    },
+    "tableSheet": {
+        "tag": "div",
+        "classes": [
+            "lesson__table"
+        ],
+        "textContent": [
+            {
+                "tag": "div",
+                "classes": [
+                    "lesson__table-row"
+                ],
+                "textContent": [
+                    {
+                        "tag": "div",
+                        "classes": [
+                            "lesson__table-cell"
+                        ],
+                        "textContent": ""
+                    },
+                    {
+                        "tag": "div",
+                        "classes": [
+                            "lesson__table-cell"
+                        ],
+                        "textContent": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "elementSheetLast": {
+        "tag": "p",
+        "classes": [
+            "lesson__text"
+        ],
+        "textContent": ""
+    }
+}

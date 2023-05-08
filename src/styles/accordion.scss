@@ -1,0 +1,32 @@
+.accordion {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    &__item {
+        padding: 10px 20px;
+        border: 1px solid #ececec;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color .2s linear;
+        overflow: hidden;
+    }
+    
+    &__item:hover {
+        background-color: #ececec;
+    }
+    
+    &__block {
+        max-height: 0px;
+        position: relative;
+        top: 20px;
+        transition: max-height 0.3s linear, top 0.3s linear;
+        transform-origin: top;
+    }
+
+    &__item--active &__block {
+        max-height: 100px;
+        top: 0;
+    }
+}
+

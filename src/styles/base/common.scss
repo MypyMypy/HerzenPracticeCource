@@ -17,7 +17,7 @@ body {
     min-width: 300px;
     display: flex;
     flex-direction: column;
-    font-family: 'Montserrat','Segoe UI', Tahoma, sans-serif;
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, sans-serif;
     min-height: 100vh;
     padding: 1px;
     background-color: $colorBlack;
@@ -26,7 +26,14 @@ body {
     font-size: $fontSizeX1;
 }
 
+.app {
+    flex: 1 1 auto;
+}
+
 .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1 1 auto;
 }
 
@@ -40,6 +47,12 @@ section {
     margin: 1px 0;
 }
 
+.main-header {
+    font-size: $fontSizeX2;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 720px) {
     body {
         font-size: $fontSizeX05;
@@ -47,5 +60,9 @@ section {
 
     .container {
         padding: 30px;
+    }
+
+    .main-header {
+        font-size: $fontSizeX1;
     }
 }

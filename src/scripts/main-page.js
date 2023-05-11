@@ -5,8 +5,10 @@ import { linkRouter } from './link-router.js';
 
 import { Header } from './header.js'
 import { Hero } from './hero.js';
-import { Footer } from './footer.js'
-
+import { Footer } from './footer.js';
+import { About } from './about.js';
+import { Contacts } from './contacts.js';
+ 
 export class RenderApp {
     constructor(router) {
         this.router = router;
@@ -91,6 +93,14 @@ export class RenderApp {
         )
     }
 
+    renderAboutPage() {
+        new About(this.app);
+    }
+
+    renderContactsPage() {
+        new Contacts(this.app);
+    }
+
     createElement(elementData) {
         if (!elementData.tag) return elementData;
 
@@ -116,6 +126,8 @@ export class RenderApp {
     }
 
     appLoading() {
-        this.app.textContent = 'Loading...'
+        setChildren(this.app, el('.container.loading', [
+            el('.loading__circle')
+        ]))
     }
 }

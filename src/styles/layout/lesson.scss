@@ -10,6 +10,10 @@
         margin-bottom: 30px;
     }
 
+    &__sub-header {
+        margin-bottom: 10px;
+    }
+
     &__text {
         margin-bottom: 15px;
     }
@@ -26,6 +30,7 @@
 
     &__list {
         list-style: initial;
+        margin-bottom: 10px;
     }
 
     &__list-item:not(:last-child) {

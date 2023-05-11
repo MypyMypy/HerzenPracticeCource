@@ -5,10 +5,10 @@ import './styles/main.scss';
 
 import Navigo from 'navigo';
 
-import { RenderApp } from './scripts/main-page.js'
+import { RenderApp } from './scripts/main-page.js';
 
-const router = new Navigo('/herzen-project/index.html/');
 // const router = new Navigo('/');
+const router = new Navigo('/herzen-project/index.html/');
 
 
 const dataUrl = 'https://mypymypy.github.io/herzen-project/public/data.json';
@@ -26,5 +26,11 @@ router.on('/', async () => {
     app.appLoading();
     if (!match.params.lesson) app.renderModulePage(match.params.moduleName, await loadResourse(dataUrl))
     else app.renderModuleLessonPage(match.params.lesson, match.params.moduleName, await loadResourse(dataUrl))
+})
+.on('/about', () => {
+    app.renderAboutPage()
+})
+.on('/contacts', () => {
+    app.renderContactsPage()
 })
 .resolve();

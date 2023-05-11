@@ -1,3 +1,6 @@
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
 .accordion {
     padding: 0;
     margin: 0;
@@ -5,7 +8,7 @@
 
     &__item {
         padding: 10px 20px;
-        border: 1px solid #ececec;
+        border: 1px solid $colorWhite50;
         border-radius: 5px;
         cursor: pointer;
         transition: background-color .2s linear;
@@ -13,7 +16,7 @@
     }
     
     &__item:hover {
-        background-color: #ececec;
+        background-color: $colorWhite15;
     }
     
     &__block {
@@ -26,7 +29,7 @@
 
     &__item--active &__block {
         max-height: 100px;
-        top: 0;
+        top: 5px;
     }
 }
 

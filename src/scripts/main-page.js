@@ -1,15 +1,19 @@
-import {el, setChildren} from 'redom';
-import { Header } from './header.js'
-import { Footer } from './footer.js'
+import { el, setChildren } from 'redom';
+
 import { Accordion } from './accordion.js';
+import { linkRouter } from './link-router.js';
+
+import { Header } from './header.js'
+import { Hero } from './hero.js';
+import { Footer } from './footer.js'
 
 export class RenderApp {
     constructor(router) {
         this.router = router;
         this.body = document.body;
-        new Header().renderComponent();
+        new Header(this.body, this.router)
         this.createApp();
-        new Footer().renderComponent();
+        new Footer(this.body, this.router)
     }
 
     createApp() {
@@ -20,36 +24,28 @@ export class RenderApp {
     }
 
     renderMainPage(dataPages) {
-        this.appReload()
+        this.app.textContent = '';
 
-        setChildren(this.app, [
-            el('section.hero', 
-                el('.container.hero__container', [
-                    el('h1.main-header', 'Ur Welcome'),
-                    el('p.hero__desc', 'Lorem impsum')
-                ])
-            ),
-            el('section.modules',
+        new Hero(this.app)
+        this.app.append(
+            el('section.modules#modules',
                 el('.container.modules__container', [
-                    el('h2.modules__header'),
+                    el('h2.modules__header', 'Модули курса'),
                     this.modulesList = el('ul.modules__list')
                 ])
             )
-        ])
+        )
+
         for (const page of dataPages) {
             const modulesItem = el('li.modules__list-item.module', [
                 el('h3.module__title', page.title),
-                this.moduleLink = el('a.module__link', 'Link', {
+                this.moduleLink = el('a.module__link', '', {
                     href: `${page.moduleLinkHref}`,
                 })
             ]);
-            this.moduleLink.addEventListener('click', e => {
-                e.preventDefault();
-                const href = e.target.getAttribute('href')
-                this.router.navigate(href);
-            }) 
+            this.moduleLink.addEventListener('click', e => linkRouter(e, this.router))
             this.modulesList.append(modulesItem)
-        } 
+        };
     }
 
     renderModulePage(moduleName, data) {
@@ -59,27 +55,24 @@ export class RenderApp {
                 el('.container.moduleSection__container', [
                     el('h1.moduleSection__header', pageData.title),
                     this.moduleSectionList = el('ul.moduleSection__list'),
-                ])    
+                ])
             )
         ])
 
         for (const lesson of Object.entries(pageData.lessons)) {
-            const lessonsItem = el('li.modulesSection__item lessonCard', [
-                el('h2.lessonCard__header', lesson[1].lessonTitle),
-                el('.lessonCard__description-block', [
-                    this.lessonLink = el('a.lessonCard__link', 'Link', {
-                        href: pageData.moduleLinkHref+'&lesson='+lesson[0]
+            const lessonsItem = el('li.modulesSection__item lesson-card', [
+                el('h2.lesson-card__header', lesson[1].lessonTitle),
+                el('.lesson-card__description-block', [
+                    this.lessonLink = el('a.lesson-card__link', 'Перейти к изучению', {
+                        href: pageData.moduleLinkHref + '&lesson=' + lesson[0]
                     }),
-                    el('p.lessonCard__description', lesson[1].lessonDescription)
+                    // el('p.lesson-card__description', lesson[1].lessonDescription)
+                    el('p.lesson-card__description', '')
                 ])
             ])
-            this.lessonLink.addEventListener('click', e => {
-                e.preventDefault();
-                const href = e.target.getAttribute('href')
-                this.router.navigate(href);
-            })
+            this.lessonLink.addEventListener('click', e => linkRouter(e, this.router))
             this.moduleSectionList.append(lessonsItem)
-        }   
+        }
 
         this.moduleSectionList = new Accordion(this.moduleSectionList)
     }
@@ -88,22 +81,22 @@ export class RenderApp {
         const pageData = data[moduleName];
         const lessonData = pageData.lessons[lessonName]
         const lessonElementsList = this.createElementsList(lessonData.lessonContent)
-        setChildren(this.app, 
-            el('section.section-lesson.lesson', 
+        setChildren(this.app,
+            el('section.section-lesson.lesson',
                 el('.container.lesson__container', [
                     el('h1.lesson__main-header', lessonData.lessonTitle),
                     lessonElementsList
                 ])
-            )    
+            )
         )
     }
 
     createElement(elementData) {
         if (!elementData.tag) return elementData;
-        
-        const elementClasses = elementData.classes? elementData.classes.reduce((total, item)=> total+='.'+item, '') : '';
-        const elementattributes = elementData.attributes? elementData.attributes : {};
-        elementData.attributes
+
+        const elementClasses = elementData.classes ? elementData.classes.reduce((total, item) => total += '.' + item, '') : '';
+        const elementattributes = elementData.attributes ? elementData.attributes : {};
+
         const element = el(`${elementData.tag}${elementClasses}`, elementattributes);
         if (typeof elementData.textContent === 'object') {
             elementData.textContent.forEach(el => {
@@ -115,14 +108,14 @@ export class RenderApp {
         return element
     }
 
-    createElementsList(elementsData, lessonElementsList=[]) {
+    createElementsList(elementsData, lessonElementsList = []) {
         for (const element of elementsData) {
             lessonElementsList.push(this.createElement(element))
         }
         return lessonElementsList
     }
 
-    appReload() {
-        this.app.textContent='Loading...'
+    appLoading() {
+        this.app.textContent = 'Loading...'
     }
 }

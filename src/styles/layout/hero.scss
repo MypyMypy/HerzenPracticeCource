@@ -1,0 +1,21 @@
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
+.hero {
+    &__container{
+        @include sectionStyle($colorWhite15);
+    }
+    &__header {
+        font-size: $fontSizeX2;
+        line-height: 120%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 720px) {
+    .hero {
+        &__header {
+            font-size: $fontSizeX1;
+        }
+    }
+}

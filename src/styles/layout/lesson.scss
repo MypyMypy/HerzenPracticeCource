@@ -1,0 +1,34 @@
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
+.lesson {
+    &__container {
+        @include sectionStyle($colorWhite7);
+    }
+
+    &__main-header {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        margin-bottom: 15px;
+    }
+
+    &__code {
+        display: block;
+        padding: 10px 20px;
+        margin-bottom: 15px;
+        border: 1px solid $colorWhite50;
+        overflow-x: scroll;
+        white-space: nowrap;
+        color: $colorCode;
+    }
+
+    &__list {
+        list-style: initial;
+    }
+
+    &__list-item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}

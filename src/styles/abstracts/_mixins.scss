@@ -1,0 +1,16 @@
+@import './variables.scss';
+
+
+@mixin sectionStyle($backColor: $colorWhite7, $color: $colorWhite, $border-color: $colorWhite50, $radius: $sectionRadius) {
+    border: 1px solid $border-color;
+    border-radius: $radius;
+    color: $color;
+    background-color: $backColor;
+}
+
+@mixin transition($propertys, $timing-function: linear, $duration: 0.2s, $delay: 0s) {
+    transition-property: $propertys;
+    transition-timing-function: $timing-function;
+    transition-duration: $duration;
+    transition-delay: $delay;
+}

@@ -1,0 +1,45 @@
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
+.modules {
+    margin: 30px 0;
+
+    &__container {
+        @include sectionStyle($colorWhite80, $colorFontBlack);
+        box-shadow: 0 0 50px 10px $colorWhite80;
+    }
+
+    &__header {
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 30px;
+    }
+
+    &__list-item {
+        grid-column: span 4;
+    }
+}
+
+@media (max-width: 720px) {
+    .modules {
+        &__list-item {
+            grid-column: span 6;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .modules {
+        &__list {
+            column-gap: 0;
+        }
+
+        &__list-item {
+            grid-column: span 12;
+        }
+    }
+}

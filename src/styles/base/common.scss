@@ -1,0 +1,51 @@
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat','Segoe UI', Tahoma, sans-serif;
+    min-height: 100vh;
+    padding: 1px;
+    background-color: $colorBlack;
+    color: $colorWhite;
+    line-height: 150%;
+    font-size: $fontSizeX1;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 1px 0;
+}
+
+@media (max-width: 720px) {
+    body {
+        font-size: $fontSizeX05;
+    }
+
+    .container {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,28 @@
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
+.header {
+    &__container {
+        @include sectionStyle;
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+    }  
+}
+
+.logo-link {
+    height: 100px;
+    min-width: 100px;
+    background-image: url('../assets/images/logo.png');
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 520px) {
+    .header {
+        &__container {
+            flex-direction: column;
+        }
+    }
+}

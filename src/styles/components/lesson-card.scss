@@ -1,0 +1,12 @@
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
+.lesson-card {
+    &__link {
+        color: $colorPeach;
+        @include transition(color);
+        &:hover {
+            color: $colorBlue;
+        }
+    }
+}

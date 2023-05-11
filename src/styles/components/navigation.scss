@@ -1,0 +1,26 @@
+@import '../abstracts/variables.scss';
+@import '../abstracts/mixins.scss';
+
+.nav {
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+    }
+    
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: $colorWhite50;
+        border-radius: $itemRadius;
+        @include transition(background-color);
+
+        &:hover {
+            background-color: $colorBlue;
+        }
+    }
+}

@@ -4,11 +4,6 @@
 .modules {
     margin: 30px 0;
 
-    &__container {
-        @include sectionStyle($colorWhite80, $colorFontBlack);
-        box-shadow: 0 0 50px 10px $colorWhite80;
-    }
-
     &__header {
         margin-bottom: 30px;
     }

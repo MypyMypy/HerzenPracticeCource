@@ -1,17 +1,3 @@
-$colorFontBlack: #000;
-$colorCode: #D3D8F9;
-
-$colorBlack: #111111;
-$colorWhite: #fff;
-$colorWhite7: #ffffff07;
-$colorWhite15: #FFFFFF26;
-$colorWhite30: #FFFFFF4D;
-$colorWhite50: #FFFFFF80;
-$colorWhite80: #ffffffe1;
-
-$colorPeach: #E9A78C;
-$colorBlue: #384ACD; 
-
 $sectionRadius: 20px;
 $sectionPadding: 50px 0;
 
@@ -22,3 +8,33 @@ $fontSizeX1: 1rem;
 $fontSizeX2: 2rem;
 
 $gap: 30px;
+
+$colorWhiteForever: #fff;
+
+//dark theme 
+$colorFontBlack: #000;
+$colorCode: #D3D8F9;
+$colorBlack: #111111;
+$colorWhite: #fff;
+$colorWhite7: #ffffff07;
+$colorWhite15: #FFFFFF26;
+$colorWhite30: #FFFFFF4D;
+$colorWhite50: #FFFFFF80;
+$colorWhite80: #ffffffe1;
+$colorPeach: #E9A78C;
+$colorBlue: #384ACD;
+
+
+/*light theme
+    $colorFontBlack: #000;
+    $colorCode: #6e81ff;
+    $colorBlack: #fff;
+    $colorWhite: #2c2c2c;
+    $colorWhite7: #e2e2e2f8;
+    $colorWhite15: #cfcfcfd9;
+    $colorWhite30: #bebebeb2;
+    $colorWhite50: #6868687f;
+    $colorWhite80: #5555551e;
+    $colorPeach: #E9A78C;
+    $colorBlue: #384ACD;
+*/

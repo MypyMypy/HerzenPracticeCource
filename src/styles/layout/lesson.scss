@@ -2,10 +2,7 @@
 @import '../abstracts/mixins.scss';
 
 .lesson {
-    &__container {
-        @include sectionStyle($colorWhite7);
-    }
-
+    
     &__main-header {
         margin-bottom: 30px;
     }

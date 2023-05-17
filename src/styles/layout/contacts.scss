@@ -2,10 +2,6 @@
 @import '../abstracts/mixins.scss';
 
 .contacts {
-    &__container {
-        @include sectionStyle($colorWhite7);
-    }
-
     &__desc {
         margin-bottom: 10px;
     }

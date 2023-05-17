@@ -10,7 +10,6 @@ import { RenderApp } from './scripts/main-page.js';
 // const router = new Navigo('/');
 const router = new Navigo('/herzen-project/index.html/');
 
-
 const dataUrl = 'https://mypymypy.github.io/herzen-project/public/data.json';
 async function loadResourse(url) {
     return await fetch(url).then(res => res.json()).then(dataTest=> {return dataTest})

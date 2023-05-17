@@ -3,7 +3,6 @@
 
 .footer {
     &__container {
-        @include sectionStyle();
         align-items: center;
         display: flex;
         justify-content: space-between;

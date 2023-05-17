@@ -3,7 +3,6 @@
 
 .header {
     &__container {
-        @include sectionStyle;
         display: flex;
         gap: 30px;
         justify-content: space-between;

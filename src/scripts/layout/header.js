@@ -1,5 +1,5 @@
 import { el, setChildren } from 'redom';
-import { linkRouter } from './link-router';
+import { linkRouter } from '../link-router';
 
 export class Header {
     constructor(root, router) {
@@ -20,7 +20,11 @@ export class Header {
             })
         })
         this.header.querySelector('.logo-link').addEventListener('click', e=> {
-            linkRouter(e, this.router)
+            linkRouter(e, this.router);
+            this.header.querySelectorAll('.nav__link').forEach(link => {
+                link.classList.remove('nav__link--acitve');
+                this.header.querySelectorAll('.nav__link')[0].classList.add('nav__link--acitve');
+            })
         })
     }
 

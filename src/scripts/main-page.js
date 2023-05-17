@@ -1,13 +1,13 @@
 import { el, setChildren } from 'redom';
 
-import { Accordion } from './accordion.js';
+import { Accordion } from './components/accordion';
 import { linkRouter } from './link-router.js';
 
-import { Header } from './header.js'
-import { Hero } from './hero.js';
-import { Footer } from './footer.js';
-import { About } from './about.js';
-import { Contacts } from './contacts.js';
+import { Header } from './layout/header.js'
+import { Hero } from './layout/hero.js';
+import { Footer } from './layout/footer.js';
+import { About } from './layout/about.js';
+import { Contacts } from './layout/contacts.js';
  
 export class RenderApp {
     constructor(router) {

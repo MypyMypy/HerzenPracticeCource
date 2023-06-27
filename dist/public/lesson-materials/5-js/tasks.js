@@ -1,0 +1,1 @@
+function math1(){return randomNumber}function math2(n){return square}function replaceWords(n,r,e){return newString}function sumDivisibleByThree(n){return sum}function sumFirstNOddNumbers(n){return sum}function findOldestPerson(n){return nameTheOldestPerson}function onlyStringProperties(n){return stringObject}

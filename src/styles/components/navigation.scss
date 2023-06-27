@@ -19,8 +19,14 @@
         border-radius: $itemRadius;
         @include transition(background-color);
 
+        &--active {
+            background-color: $colorBlue;   
+        }
+
         &:hover {
             background-color: $colorBlue;
         }
+
+        
     }
 }

@@ -14,16 +14,16 @@ export default class Header {
             link.addEventListener('click', e => {
                 linkRouter(e, this.router);
                 this.header.querySelectorAll('.nav__link').forEach(link => {
-                    link.classList.remove('nav__link--acitve')
+                    link.classList.remove('nav__link--active')
                 })
-                e.target.classList.add('nav__link--acitve');
+                e.target.classList.add('nav__link--active');
             })
         })
         this.header.querySelector('.logo-link').addEventListener('click', e=> {
             linkRouter(e, this.router);
             this.header.querySelectorAll('.nav__link').forEach(link => {
-                link.classList.remove('nav__link--acitve');
-                this.header.querySelectorAll('.nav__link')[0].classList.add('nav__link--acitve');
+                link.classList.remove('nav__link--active');
+                this.header.querySelectorAll('.nav__link')[0].classList.add('nav__link--active');
             })
         })
     }
@@ -37,7 +37,7 @@ export default class Header {
                 el('nav.nav.header__nav',
                     this.navList = el('ul.nav__list', [
                         el('li.nav__item',
-                            this.headerMainLink = el('a.nav__link.nav__link--acitve', 'Главная страница', {
+                            this.headerMainLink = el('a.nav__link.nav__link--active', 'Главная страница', {
                                 href: "/"
                             })
                         ),

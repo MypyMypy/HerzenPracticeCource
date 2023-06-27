@@ -343,7 +343,7 @@
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://code.visualstudio.com/",
@@ -1494,7 +1494,7 @@
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://validator.w3.org/"
@@ -1512,7 +1512,7 @@
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/2-base-html/text.docx",
@@ -1532,7 +1532,7 @@
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/2-base-html/img.zip",
@@ -1552,7 +1552,7 @@
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/2-base-html/expected-result-html.png",
@@ -2432,7 +2432,7 @@
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://validator.w3.org/"
@@ -2450,7 +2450,7 @@
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://jigsaw.w3.org/css-validator/"
@@ -2468,7 +2468,7 @@
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/3-base-css/expected-result-css.png",
@@ -2488,7 +2488,7 @@
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/3-base-css/img.zip",
@@ -3216,7 +3216,7 @@
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://validator.w3.org/"
@@ -3234,7 +3234,7 @@
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://jigsaw.w3.org/css-validator/"
@@ -3252,7 +3252,7 @@
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/4-html-css/expected-result-html-css.png",
@@ -3272,7 +3272,7 @@
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/4-html-css/img.zip",
@@ -5826,7 +5826,7 @@
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/5-js/expected-results.zip",
@@ -5846,7 +5846,7 @@
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/5-js/tasks.js",

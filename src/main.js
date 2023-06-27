@@ -8,8 +8,7 @@ import Navigo from 'navigo';
 import SPAApp from './scripts/spa-app.js';
 
 // const router = new Navigo('/', true, '#');
-// const router = new Navigo('/herzen-project/index.html');
-const router = new Navigo(window.location.origin, true, '#');
+const router = new Navigo('/herzen-project/index.html', true, '#');
 
 const dataUrl = 'https://mypymypy.github.io/herzen-project/public/data.json';
 

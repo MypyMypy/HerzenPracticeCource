@@ -327,7 +327,7 @@ export const data =
             "classes": [
               "lesson__sub-header"
             ],
-            "textContent": "Ресурсы для выполнения задания:"
+            "textContent": "Материалы для выполнения задания:"
           },
           {
             "tag": "ul",
@@ -1478,7 +1478,7 @@ export const data =
             "classes": [
               "lesson__sub-header"
             ],
-            "textContent": "Ресурсы для выполнения задания:"
+            "textContent": "Материалы для выполнения задания:"
           },
           {
             "tag": "ul",
@@ -2416,7 +2416,7 @@ export const data =
             "classes": [
               "lesson__sub-header"
             ],
-            "textContent": "Ресурсы для выполнения задания:"
+            "textContent": "Материалы для выполнения задания:"
           },
           {
             "tag": "ul",
@@ -3200,7 +3200,7 @@ export const data =
             "classes": [
               "lesson__sub-header"
             ],
-            "textContent": "Ресурсы для выполнения задания:"
+            "textContent": "Материалы для выполнения задания:"
           },
           {
             "tag": "ul",
@@ -5810,7 +5810,7 @@ export const data =
             "classes": [
               "lesson__sub-header"
             ],
-            "textContent": "Ресурсы для выполнения задания:"
+            "textContent": "Материалы для выполнения задания:"
           },
           {
             "tag": "ul",

@@ -1,7 +1,7 @@
 import { el, setChildren } from 'redom';
 import { linkRouter } from '../link-router';
 
-export class Header {
+export default class Header {
     constructor(root, router) {
         this.root = root;
         this.router = router;

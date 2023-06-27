@@ -2,6 +2,35 @@
 @import '../abstracts/mixins.scss';
 
 .lesson {
+
+    &__container {
+        position: relative;
+        padding-top: 60px;
+    }
+
+    &__link {
+        transition-property: background-image, color;
+        transition-duration: 0.2s;
+        transition-timing-function: linear;
+
+        &:hover {
+            color: #384ACD;
+        }
+    }
+
+    &__link-back {
+        position: absolute;
+        top: 20px;
+        left: 25px;
+        padding: 5px 5px 5px 25px;
+        background-image: url('../assets/images/to-back.svg');
+        background-repeat: no-repeat;
+        background-position: left center;
+
+        &:hover {
+            background-image: url('../assets/images/to-back-hover.svg');
+        }
+    }
     
     &__main-header {
         margin-bottom: 30px;
@@ -17,7 +46,7 @@
 
     &__code {
         display: block;
-        padding: 10px 20px;
+        padding: 10px 20px 15px;
         margin-bottom: 15px;
         border: 1px solid $colorWhite50;
         overflow-x: scroll;

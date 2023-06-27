@@ -1,18 +1,33 @@
-import { el, setChildren } from 'redom';
+import favicon from '../assets/images/favicon.png'
 
-import { Accordion } from './components/accordion';
+import { el, setChildren } from 'redom';
 import { linkRouter } from './link-router.js';
 
-import { Header } from './layout/header.js'
-import { Hero } from './layout/hero.js';
-import { Footer } from './layout/footer.js';
-import { About } from './layout/about.js';
-import { Contacts } from './layout/contacts.js';
+import Accordion from './components/accordion.js';
+
+import Header  from './layout/header.js';
+import Footer from './layout/footer.js';
+
+import Hero  from './layout/hero.js';
+import About from './layout/about.js';
+import Contacts from './layout/contacts.js';
  
-export class RenderApp {
+export default class SPAApp {
     constructor(router) {
+        if (SPAApp.instance) {
+            return SPAApp.instance;
+          }
+      
+        SPAApp.instance = this;
+
         this.router = router;
         this.body = document.body;
+        
+        document.head.append(el('link', {
+            rel: 'icon',
+            href: favicon
+        }))
+
         new Header(this.body, this.router)
         this.createApp();
         new Footer(this.body, this.router)
@@ -83,9 +98,20 @@ export class RenderApp {
         const pageData = data[moduleName];
         const lessonData = pageData.lessons[lessonName]
         const lessonElementsList = this.createElementsList(lessonData.lessonContent)
+
+        const lessonLinkBack = el('a.lesson__link-back.lesson__link', {
+            textContent: 'Назад',
+            href: '#'
+        })
+        lessonLinkBack.addEventListener('click', e => {
+            e.preventDefault();
+            window.history.back();
+
+        })
         setChildren(this.app,
             el('section.section-lesson.lesson',
                 el('.container.lesson__container', [
+                    lessonLinkBack,
                     el('h1.lesson__main-header', lessonData.lessonTitle),
                     lessonElementsList
                 ])

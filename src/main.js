@@ -5,17 +5,19 @@ import './styles/main.scss';
 
 import Navigo from 'navigo';
 
-import { RenderApp } from './scripts/main-page.js';
+import SPAApp from './scripts/spa-app.js';
 
-// const router = new Navigo('/');
-const router = new Navigo('/herzen-project/index.html/');
+// const router = new Navigo('/', true, '#');
+// const router = new Navigo('/herzen-project/index.html');
+const router = new Navigo(window.location.origin, true, '#');
 
 const dataUrl = 'https://mypymypy.github.io/herzen-project/public/data.json';
+
 async function loadResourse(url) {
-    return await fetch(url).then(res => res.json()).then(dataTest=> {return dataTest})
+    return await fetch(url).then(res => res.json())
 }
 
-const app = new RenderApp(router);
+const app = new SPAApp(router);
 
 router.on('/', async () => {
     app.appLoading();

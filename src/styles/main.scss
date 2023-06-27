@@ -1,3 +1,8 @@
+@import './base/common.scss';
+@import './base/reset.scss';
+@import './base/toogle.scss';
+@import './base/section-style.scss';
+
 @import './abstracts/typography.scss';
 
 @import './layout/header.scss';
@@ -16,8 +21,5 @@
 @import './components/lesson-card.scss';
 @import './components/loading.scss';
 
-@import './base/common.scss';
-@import './base/reset.scss';
-@import './base/toogle.scss';
-@import './base/section-style.scss';
+
 

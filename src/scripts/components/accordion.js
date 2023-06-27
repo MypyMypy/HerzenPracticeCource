@@ -1,4 +1,4 @@
-export class Accordion {
+export default class Accordion {
     constructor(accordion) {
         // document.querySelector('.accordion')
         this.accordion = accordion

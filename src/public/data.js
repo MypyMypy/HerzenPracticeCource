@@ -327,7 +327,7 @@ export const data =
             "classes": [
               "lesson__sub-header"
             ],
-            "textContent": "Материалы для выполнения задания:"
+            "textContent": "Ресурсы для выполнения задания:"
           },
           {
             "tag": "ul",
@@ -344,7 +344,7 @@ export const data =
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://code.visualstudio.com/",
@@ -1478,7 +1478,7 @@ export const data =
             "classes": [
               "lesson__sub-header"
             ],
-            "textContent": "Материалы для выполнения задания:"
+            "textContent": "Ресурсы для выполнения задания:"
           },
           {
             "tag": "ul",
@@ -1495,7 +1495,7 @@ export const data =
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://validator.w3.org/"
@@ -1513,7 +1513,7 @@ export const data =
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/2-base-html/text.docx",
@@ -1533,7 +1533,7 @@ export const data =
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/2-base-html/img.zip",
@@ -1553,7 +1553,7 @@ export const data =
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/2-base-html/expected-result-html.png",
@@ -2416,7 +2416,7 @@ export const data =
             "classes": [
               "lesson__sub-header"
             ],
-            "textContent": "Материалы для выполнения задания:"
+            "textContent": "Ресурсы для выполнения задания:"
           },
           {
             "tag": "ul",
@@ -2433,7 +2433,7 @@ export const data =
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://validator.w3.org/"
@@ -2451,7 +2451,7 @@ export const data =
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://jigsaw.w3.org/css-validator/"
@@ -2469,7 +2469,7 @@ export const data =
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/3-base-css/expected-result-css.png",
@@ -2489,7 +2489,7 @@ export const data =
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/3-base-css/img.zip",
@@ -3200,7 +3200,7 @@ export const data =
             "classes": [
               "lesson__sub-header"
             ],
-            "textContent": "Материалы для выполнения задания:"
+            "textContent": "Ресурсы для выполнения задания:"
           },
           {
             "tag": "ul",
@@ -3217,7 +3217,7 @@ export const data =
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://validator.w3.org/"
@@ -3235,7 +3235,7 @@ export const data =
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://jigsaw.w3.org/css-validator/"
@@ -3253,7 +3253,7 @@ export const data =
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/4-html-css/expected-result-html-css.png",
@@ -3273,7 +3273,7 @@ export const data =
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/4-html-css/img.zip",
@@ -5810,7 +5810,7 @@ export const data =
             "classes": [
               "lesson__sub-header"
             ],
-            "textContent": "Материалы для выполнения задания:"
+            "textContent": "Ресурсы для выполнения задания:"
           },
           {
             "tag": "ul",
@@ -5827,7 +5827,7 @@ export const data =
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/5-js/expected-results.zip",
@@ -5847,7 +5847,7 @@ export const data =
                   {
                     "tag": "a",
                     "classes": [
-                      "lesson__text"
+                      "lesson__link"
                     ],
                     "attributes": {
                       "href": "https://github.com/MypyMypy/MypyMypy.github.io/blob/main/herzen-project/public/lesson-materials/5-js/tasks.js",

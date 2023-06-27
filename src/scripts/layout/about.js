@@ -1,6 +1,6 @@
 import { el, setChildren } from 'redom';
 
-export class About {
+export default class About {
     constructor(root) {
         this.root = root
         this.aboutSection = el('section.about');

@@ -1,6 +1,6 @@
 import {el, setChildren} from 'redom';
 
-export class Footer {
+export default class Footer {
     constructor(root, router) {
         this.root = root;
         this.router = router;

@@ -1,6 +1,6 @@
 import { el, setChildren } from 'redom';
 
-export class Contacts {
+export default class Contacts {
     constructor(root) {
         this.root = root
         this.contactsSection = el('section.contacts');

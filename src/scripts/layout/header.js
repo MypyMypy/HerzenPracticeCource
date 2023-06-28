@@ -32,7 +32,8 @@ export default class Header {
         setChildren(this.header, [
             el('.container.header__container',
                 el('a.logo-link.header__logo-link', '', {
-                    href: "/"
+                    href: '/',
+                    textContent: 'Логотип-ссылка на главную страницу'
                 }),
                 el('nav.nav.header__nav',
                     this.navList = el('ul.nav__list', [

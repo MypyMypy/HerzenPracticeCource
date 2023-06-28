@@ -13,9 +13,10 @@
 .logo-link {
     height: 100px;
     min-width: 100px;
-    background-image: url('../assets/images/logo.png');
+    background-image: url('../assets/images/logo.webp');
     background-position: center;
     background-size: cover;
+    font-size: 0;
 }
 
 @media (max-width: 520px) {

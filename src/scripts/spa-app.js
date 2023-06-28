@@ -1,4 +1,4 @@
-import favicon from '../assets/images/favicon.png'
+import favicon from '../assets/images/favicon.webp'
 
 import { el, setChildren } from 'redom';
 import { linkRouter } from './link-router.js';

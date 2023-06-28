@@ -18,12 +18,9 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
-    "card-validator": "^8.1.1",
-    "jsonfile": "^6.1.0",
     "navigo": "^8.11.1",
     "path": "^0.12.7",
-    "redom": "^3.29.1",
-    "vanilla-tilt": "^1.7.3"
+    "redom": "^3.29.1"
   },
   "scripts": {
     "build": "webpack --mode=production --env prod",

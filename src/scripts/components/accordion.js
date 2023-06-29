@@ -1,6 +1,5 @@
 export default class Accordion {
     constructor(accordion) {
-        // document.querySelector('.accordion')
         this.accordion = accordion
         
         this.accordion.classList.add('accordion')

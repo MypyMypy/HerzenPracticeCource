@@ -27,7 +27,7 @@
 
 .hero {
     &__container{
-        @include sectionStyle($colorWhite15);
+        @include sectionStyle($colorWhite7);
     }
 }
 
@@ -46,6 +46,5 @@
 .modules {
     &__container {
         @include sectionStyle($colorWhite80, $colorFontBlack);
-        box-shadow: 0 0 50px 10px $colorWhite80;
     }
 }

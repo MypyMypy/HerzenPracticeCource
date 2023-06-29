@@ -15,8 +15,9 @@
         display: inline-flex;
         align-items: center;
         padding: 10px 20px;
-        background-color: $colorWhite50;
+        background-color: $colorWhite30;
         border-radius: $itemRadius;
+        font-weight: 600;
         @include transition(background-color);
 
         &--active {

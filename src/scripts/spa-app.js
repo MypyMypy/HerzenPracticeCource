@@ -23,17 +23,21 @@ export default class SPAApp {
         this.router = router;
         this.body = document.body;
         
-        document.head.append(el('link', {
-            rel: 'icon',
-            href: favicon
-        }))
-
         new Header(this.body, this.router)
         this.createApp();
         new Footer(this.body, this.router)
     }
 
     createApp() {
+        document.head.append(el('meta', {
+            name: 'description',
+            content: 'Цифровой образовательный ресурс в поддержку изучения технологий веб-программирования'
+        }))
+        document.head.append(el('link', {
+            rel: 'icon',
+            href: favicon
+        }))
+
         this.main = el('main.main');
         this.app = el('div.app');
         this.body.append(this.main);
@@ -64,7 +68,6 @@ export default class SPAApp {
             this.modulesList.append(modulesItem)
         };
     }
-
     renderModulePage(moduleName, data) {
         const pageData = data[moduleName];
         setChildren(this.app, [
@@ -93,7 +96,6 @@ export default class SPAApp {
 
         this.moduleSectionList = new Accordion(this.moduleSectionList)
     }
-
     renderModuleLessonPage(lessonName, moduleName, data) {
         const pageData = data[moduleName];
         const lessonData = pageData.lessons[lessonName]
@@ -118,11 +120,9 @@ export default class SPAApp {
             )
         )
     }
-
     renderAboutPage() {
         new About(this.app);
     }
-
     renderContactsPage() {
         new Contacts(this.app);
     }
@@ -143,7 +143,6 @@ export default class SPAApp {
         }
         return element
     }
-
     createElementsList(elementsData, lessonElementsList = []) {
         for (const element of elementsData) {
             lessonElementsList.push(this.createElement(element))

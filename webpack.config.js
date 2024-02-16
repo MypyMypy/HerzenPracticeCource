@@ -9,7 +9,7 @@ module.exports = (env) => ({
     output: {
         path: path.resolve(process.cwd(), 'dist'),
         filename: 'main.[contenthash].js',
-        publicPath: '/',
+        publicPath: '/HerzenPracticeCource/',
     },
     module: {
         rules: [

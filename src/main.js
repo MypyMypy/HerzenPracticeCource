@@ -3,8 +3,8 @@ import './styles/main.scss';
 import Navigo from 'navigo';
 import SPAApp from './scripts/spa-app.js';
 
-const router = new Navigo('/projects/herzen-project/', true, '#');
-const dataUrl = 'https://mypymypy.github.io/projects/herzen-project/public/data.json';
+const router = new Navigo('/', true, '#');
+const dataUrl = 'https://mypymypy.github.io/HerzenPracticeCource/public/data.json';
 async function loadResourse(url) {
     return await fetch(url).then(res => res.json())
 }
